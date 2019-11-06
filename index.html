@@ -3,48 +3,175 @@
 <head>
   <meta charset="utf-8">
   <title>ТвиТеллер</title>
-  <link rel="stylesheet" href="/css/main.css">
+  <link rel="stylesheet" href="styles/mail.css">
 </head>
 <body>
   <main>
-    <header>
+    <header class="main__header">
       <h2>Последние высказывания</h2>
       <img src="images/sort-icn.svg" alt="Иконка сортировки">
     </header>
 
-    <article class="">
+    <article class="story">
 
-      <img src="images/ava-vasya.jpg" alt="">
+      <img class="story__user__ava" src="images/ava-vasya.jpg" alt="Фотография пользователя">
 
-      <div class="">
-        <h3>Василий Ночь</h3>
-        <a href="#">@vasya.night</a>
-        <span>11 октября</span>
+      <div class="story__body">
+
+        <header class="story__body__header">
+          <h3>Василий Ночь</h3>
+          <a href="#">@vasya.night</a>
+          <span>11 октября</span>
+        </header>
+
         <p>Когда вы полагаете, что именно ваш самолет разобьется, или что именно ваш проект все назовут идиотским, или что именно вас все высмеют и растопчут, вы по сути говорите себе: «Я — исключение из правила, я не такой, как все остальные; я уникальный и особенный». Это чистой воды нарциссизм. Вы полагаете, что именно ваши проблемы заслуживают особого обращения, что именно ваши проблемы уникальны и не подчиняются законам физической вселенной.</p>
 
-        <ul>
+        <ul class="story__body__actions">
           <li>
             <img src="images/reply-icn.svg" alt="Иконка ответа">
           </li>
           <li>
             <img src="images/retweet-icn.svg" alt="Иконка ретвита">
-            10
+            <span class="story__body__actions__item">
+              5
+            </span>
           </li>
           <li>
-            <img src="images/like-icn.svg" alt="Иконка лайка">
-            32
+            <img src="images/like-icn.svg" alt="Иконка одобрения">
+            <span class="story__body__actions__item">
+              17
+            </span>
           </li>
           <li>
-            <img src="images/link-icn.svg" alt="Иконка ссылки">
+            <img src="images/link-icn.svg" alt="Иконка поделиться">
           </li>
         </ul>
+      </div>
+    </article>
 
+    <article class="story">
+      <img class="story__user__ava" src="images/ava-wise.png" alt="Фотография пользователя">
+      <div class="story__body">
+        <header class="story__body__header">
+          <h3>Мудрая выдра</h3>
+          <a href="#">@wisewise</a>
+          <span>11 октября</span>
+        </header>
+        <p>Мы все переоцениваем свои навыки и стремления и недооцениваем навыки и стремления других. Большинство людей уверены, что обладают интеллектом выше среднего и лучше справляются практически со всеми задачами, — особенно если это абсолютно не так.</p>
+
+        <ul class="story__body__actions">
+          <li>
+            <img src="images/reply-icn.svg" alt="Иконка ответа">
+          </li>
+          <li>
+            <img src="images/retweet-icn.svg" alt="Иконка ретвита">
+            <span class="story__body__actions__item">
+              5
+            </span>
+          </li>
+          <li>
+            <img src="images/like-icn.svg" alt="Иконка одобрения">
+            <span class="story__body__actions__item">
+              17
+            </span>
+          </li>
+          <li>
+            <img src="images/link-icn.svg" alt="Иконка поделиться">
+          </li>
+        </ul>
+      </div>
+    </article>
+
+    <article class="story">
+      <img class="story__user__ava" src="images/ava-kkoderka.png" alt="Фотография пользователя">
+      <div class="story__body">
+        <header class="story__body__header">
+          <h3>Кккодерка</h3>
+          <a href="#">@kkkoderka</a>
+          <span>11 октября</span>
+        </header>
+        <p>Мы разрабатываем и письма, и сайты, используя одни и те же языки — HTML и CSS. Происходящее в исходном коде html-писем совсем не похоже на то, что можно увидеть в среде разработки современного фронтендера. Вам даже может показаться, что вы вернулись в веб-средневековье. </p>
+        <ul class="story__body__actions">
+          <li>
+            <img src="images/reply-icn.svg" alt="Иконка ответа">
+          </li>
+          <li>
+            <img src="images/retweet-icn.svg" alt="Иконка ретвита">
+            <span class="story__body__actions__item">
+              1
+            </span>
+          </li>
+          <li>
+            <img src="images/like-icn.svg" alt="Иконка одобрения">
+            <span class="story__body__actions__item">
+              5
+            </span>
+          </li>
+          <li>
+            <img src="images/link-icn.svg" alt="Иконка поделиться">
+          </li>
+        </ul>
+      </div>
+    </article>
+
+    <article class="friend__list">
+      <header>
+        <h2>Ваши друзья</h2>
+      </header>
+      <div class="">
+        <h3>Катерина Кацман</h3>
+        <a href="#">@katya-k</a>
+        <img src="images/ava-katya.png" alt="">
+      </div>
+
+      <div class="">
+        <h3>Инна Берг</h3>
+        <a href="#">@inna-b</a>
+        <img src="images/ava-inna." alt="">
+
+        <div class="">
+          <h3>Агент Д</h3>
+          <a href="#">@win-twin</a>
+          <img src="" alt="">
+        </div>
       </div>
 
     </article>
-
   </main>
 
-</body>
+  <nav>
+    <ul>
+      <li>
+      <div class="nav__icon nav__icon__home">
+        Главная
+      </div>
+    </li>
+      <li>
+      <div class="nav__icon nav__icon__chat">
+        Уведомления
+      </div>
+    </li>
+      <li>
+      <div class="nav__icon nav__icon__chat">
+        Сообщения
+      </div>
+    </li>
+      <li>
+      <div class="nav__icon nav__icon__chat">
+        Закладки
+      </div>
+    </li>
+    </ul>
+  </nav>
 
+  <!-- <main>
+
+    <header class="message__header">
+      <h2>Сообщения</h2>
+      <img src="images/new-msg-icn.svg" alt="">
+    </header>
+
+  </main> -->
+
+</body>
 </html>
