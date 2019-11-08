@@ -170,18 +170,14 @@ aside {
   background-image: url(../images/Rectangle1.svg);
   background-repeat: no-repeat;
   background-size: cover;
-  position: fixed;
-  right: 136px;
+  position: absolute;
+  right: 80px;
   top: 15px;
 }
 
-aside ul {
-  padding: 16px 8px 16px 11px;
-}
-
-aside ul li {
-  display: flex;
-}
+/* aside ul {
+  margin: 16px 8px;
+} */
 
 .user__friend {
   display: flex;
@@ -197,18 +193,19 @@ aside ul li {
 aside ul li {
   font-size: 16px;
   margin-bottom: 16px;
-  padding: 0px 9px;
+  /* margin-left: 16px; */
   padding-bottom: 9px;
+  padding-left: 16px;
+  display: flex;
   border-bottom: 1px solid rgba(0, 0, 0, 0.25);
 }
 
 aside ul li:first-child {
   font-weight: bold;
   font-size: 18px;
+  padding-top: 16px;
   margin-bottom: 16px;
-  padding: 0px 8px;
-  padding-bottom: 8px;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.25);
+  /* border-bottom: 1px solid rgba(0, 0, 0, 0.25); */
 }
 
 aside ul li:last-child {
@@ -232,18 +229,46 @@ aside ul li:last-child {
   margin-bottom: 6px;
 }
 
-/* Чат */
+@media (max-width: 1024px) {
 
-.chat div {
-  margin: 0 auto;
+  nav {
+    padding: 16px 16px 0 0;
+  }
+
+.nav__menu__text {
+  display: none;
 }
 
-.chat__header {
-  font-size: 18px;
-  font-weight: bold;
-  padding: 16px;
+.nav__button__text {
+  display: none;
+}
+
+.nav__button__icn {
+  width: 20px;
+  height: 20px;
+  background-image: url(../images/pencil.svg);
+}
+
+.nav__button {
+  padding: 0;
+  width: 32px;
+  height: 32px;
+  border-radius: 32px;
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.25);
+  justify-content: center;
+}
+
+.nav__menu li a {
+  padding: 16px 0;
+}
+
+aside ul {
+  margin-left: 16px;
+}
+
+}
+
+@media (max-width: 568px) {
+
 }
