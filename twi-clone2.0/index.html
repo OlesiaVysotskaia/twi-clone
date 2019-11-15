@@ -43,50 +43,49 @@
       </a>
     </nav>
 
-    <main>
-      <header class="main__chat__header">
-        <h2>Сообщения</h2>
-        <img src="../images/new-msg-icn.svg" alt="">
-      </header>
+    <div class="chat">
 
-      <article class="prev">
-        <img class="prev__ava" src="../images/ava-vasya.jpg" alt="">
-        <div class="chat__body">
-          <header class="chat__body__header">
-            <h3>Василий Ночь</h3>
-            <a href="#">@vasya.right</a>
-            <a href="#">11 октября</a>
+        <main>
+          <header class="main__chat__header">
+            <h2>Сообщения</h2>
+            <img src="../images/new-msg-icn.svg" alt="">
           </header>
-          <p>Привет, киберстранник. Настала пор...</p>
-        </div>
-      </article>
+          <article class="prev">
+            <img class="prev__ava" src="../images/ava-vasya.jpg" alt="">
+            <div class="chat__body">
+              <header class="chat__body__header">
+                <h3>Василий Ночь</h3>
+                <a href="#">@vasya.right</a>
+                <a href="#">11 октября</a>
+              </header>
+              <p>Привет, киберстранник. Настала пор...</p>
+            </div>
+          </article>
+          <article class="prev highlight">
+            <img class="prev__ava" src="../images/ava-dale.png" alt="">
+            <div class="chat__body">
+              <header class="chat__body__header">
+                <h3>Агент Д</h3>
+                <a href="#">@win-twin</a>
+                <a href="#">3 октября</a>
+              </header>
+              <p>Открою тебе маленький секрет. Кажд...</p>
+            </div>
+          </article>
+          <article class="prev">
+            <img class="prev__ava" src="../images/ava-inna.png" alt="">
+            <div class="chat__body">
+              <header class="chat__body__header">
+                <h3>Инна Берг</h3>
+                <a href="#">@inna-b</a>
+                <a href="#">2 октября</a>
+              </header>
+              <p>Ты думаешь, я не понимаю. Эта безн...</p>
+            </div>
+          </article>
+        </main>
 
-      <article class="prev highlight">
-        <img class="prev__ava" src="../images/ava-dale.png" alt="">
-        <div class="chat__body">
-          <header class="chat__body__header">
-            <h3>Агент Д</h3>
-            <a href="#">@win-twin</a>
-            <a href="#">3 октября</a>
-          </header>
-          <p>Открою тебе маленький секрет. Кажд...</p>
-        </div>
-      </article>
-
-      <article class="prev">
-        <img class="prev__ava" src="../images/ava-inna.png" alt="">
-        <div class="chat__body">
-          <header class="chat__body__header">
-            <h3>Инна Берг</h3>
-            <a href="#">@inna-b</a>
-            <a href="#">2 октября</a>
-          </header>
-          <p>Ты думаешь, я не понимаю. Эта безн...</p>
-        </div>
-      </article>
-    </main>
-
-      <aside>
+      <aside class="">
         <header class="window__chat__header">
           <h2>Агент Д</h2>
           <a href="#">@win-twin</a>
@@ -101,13 +100,25 @@
         </article>
 
         <article class="chat__green">
-          <p>Открою тебе маленький секрет. Каждый день, раз в день, делай себе маленький подарок. Не планируй заранее, не жди его, просто пусть он случается. Это может быть новая рубашка или послеобеденный сон в кабинете, или две чашки хорошего, горячего, черного кофе.</p>
+          <div class="chat_green_message">
+            <img src="../images/ava-dale.png" alt="">
+            <p>Открою тебе маленький секрет. Каждый день, раз в день, делай себе маленький подарок. Не планируй заранее, не жди его, просто пусть он случается. Это может быть новая рубашка или послеобеденный сон в кабинете, или две чашки хорошего, горячего, черного кофе.</p>
+          </div>
+
           <ul class="chat__green__status">
             <li>11 октября,</li>
             <li>16:40</li>
           </ul>
         </article>
 
+        <article class="window__chat__bottom">
+          <p>Введите сообщение</p>
+          <img src="../images/icons8-sent1.svg" alt="">
+        </article>
+
       </aside>
+
+    </div>
+
   </body>
 </html>

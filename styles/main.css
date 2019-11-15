@@ -171,7 +171,7 @@ aside {
   background-repeat: no-repeat;
   background-size: cover;
   position: absolute;
-  right: 80px;
+  right: 70px;
   top: 15px;
 }
 
@@ -267,8 +267,32 @@ aside ul {
   margin-left: 16px;
 }
 
+@media (max-width: 768px) {
+
+body {
+  margin-left: 65px;
 }
 
-@media (max-width: 568px) {
+nav {
+  margin-left: 25px;
+}
+
+aside {
+  display: none;
+}
+
+}
+
+@media (max-width: 320px) {
+
+  body {
+    width: 320px;
+  }
+
+  nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
 
 }
